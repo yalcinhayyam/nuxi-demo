@@ -1,0 +1,34 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "codegen-client": "graphql-codegen --config codegen.client.ts",
+    "codegen-server": "graphql-codegen --config codegen.server.ts",
+    "codegen": "graphql-codegen --config codegen.ts"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "5.0.0",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/apollo": "^5.0.0-alpha.7",
+    "nuxt": "^3.7.4",
+    "typescript": "^5.2.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5",
+    "@graphql-codegen/client-preset": "4.1.0",
+    "@graphql-codegen/typescript-resolvers": "4.0.1",
+    "@graphql-codegen/typescript": "4.0.1"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.9.4",
+    "@as-integrations/h3": "^1.1.6",
+    "@vue/apollo-composable": "^4.0.0-beta.11",
+    "graphql": "^16.8.1",
+    "nuxt-graphql-server": "^3.0.0"
+  }
+}
